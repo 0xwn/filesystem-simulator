@@ -82,7 +82,7 @@ int main() {
                     line += completion;
                     std::cout << completion;
                 }
-            } else if (c == -32 || c == 224) { // Arrow keys
+            } else if (c == -32 || (unsigned char)c == 224) { // Arrow keys
                 char c2 = _getch();
                 if (c2 == 72) { // Up arrow
                     if (!history.empty()) {
